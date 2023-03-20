@@ -1,0 +1,40 @@
+.nav{
+  margin-left: 70%;
+}
+
+.navbar{
+    padding: 5.2px 25px;
+    background-color: rgb(0, 0, 0,0.9);
+}
+
+.navbar-brand{
+    letter-spacing: 5px;
+    font-size: 1.8rem;
+}
+
+.active{
+    color: #fff !important;
+    border-bottom: 2px solid #fff;
+}
+
+li{
+ list-style: none;
+}
+
+.nav-item{
+    cursor: pointer;
+    margin: 0 10px;
+    padding: 10px 0;
+}
+
+.navbar li{
+    transition: transform .4s;
+}
+
+li:hover{
+    transform: scale(1.1);
+}
+
+.navbar-toggler{
+    background-color: white;
+}
