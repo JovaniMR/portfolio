@@ -1,0 +1,21 @@
+<div class="work-box">
+  <div class="work-img">
+    <img [src]="project.urlImage" alt="image of project" class="img-fluid" />
+  </div>
+  <div class="work-content">
+    <div class="row">
+      <div class="col-sm-8">
+        <h2 class="w-title">{{ project.name }}</h2>
+        <div class="w-more">
+          <span class="w-ctegory">Aplicación web</span> /
+          <span class="w-date"> {{ project.creationYear }}</span>
+        </div>
+      </div>
+      <div class="col-sm-4">
+        <div class="w-like">
+          <a [routerLink]="project.link"> <span class="bi bi-plus-circle"></span></a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

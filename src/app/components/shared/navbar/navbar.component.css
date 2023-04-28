@@ -9,12 +9,12 @@
 
 .navbar-brand{
     letter-spacing: 5px;
-    font-size: 1.8rem;
+    font-size: 1.5rem;
 }
 
 .active{
     color: #fff !important;
-    border-bottom: 2px solid #fff;
+    border-bottom: 2px solid #0078FF;
 }
 
 li{

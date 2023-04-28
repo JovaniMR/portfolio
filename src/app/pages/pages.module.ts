@@ -2,14 +2,21 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
 import { PagesRoutingModule } from './pages-routing.module';
-import { PinturilloComponent } from './pinturillo/pinturillo.component';
-
+import { PrincipalComponent } from './principal/principal.component';
+import { CurriculumComponent } from './curriculum/curriculum.component';
+import { CoursesComponent } from './courses/courses.component';
+import { RouterModule } from '@angular/router';
 
 @NgModule({
-  declarations: [PinturilloComponent],
+  declarations: [
+    PrincipalComponent,
+    CurriculumComponent,
+    CoursesComponent,
+  ],
   imports: [
-    CommonModule,
-    PagesRoutingModule
-  ]
+    CommonModule, 
+    PagesRoutingModule,
+    RouterModule
+  ],
 })
-export class PagesModule { }
+export class PagesModule {}

@@ -1,0 +1,27 @@
+<div class="row">
+  <!-- ======= Portfolio Details Section ======= -->
+  <section id="portfolio-details" class="portfolio-details">
+    <div class="container">
+      <div class="col-sm-12">
+        <div class="title-box text-center">
+          <h3 class="title-b">CHAT</h3>
+          <div class="line-mf"></div>
+        </div>
+      </div>
+      <div class="row gy-4">
+        <div class="col-12">
+          <app-project-description
+            [projectDescription]="projectDescription"
+          ></app-project-description>
+        </div>
+        <div class="col-lg-8">
+          <app-project-slider [slider]="slider"></app-project-slider>
+        </div>
+        <div class="col-lg-4">
+          <app-project-info [projectInfo]="projectInfo"></app-project-info>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- End Portfolio Details Section -->
+</div>

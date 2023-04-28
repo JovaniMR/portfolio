@@ -1,12 +1,8 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
-import { ChatComponent } from './chat/chat.component';
 import { CurriculumComponent } from './curriculum/curriculum.component';
-import { EcommerceComponent } from './ecommerce/ecommerce.component';
-import { NotesComponent } from './notes/notes.component';
-import { PinturilloComponent } from './pinturillo/pinturillo.component';
 import { PrincipalComponent } from './principal/principal.component';
-import { ProyectsComponent } from './proyects/proyects.component';
+import { CoursesComponent } from './courses/courses.component';
 
 const routes: Routes = [
   {
@@ -18,32 +14,22 @@ const routes: Routes = [
     component: CurriculumComponent,
   },
   {
-    path: 'portafolio',
-    component: ProyectsComponent,
+    path: 'cursos',
+    component: CoursesComponent,
   },
   {
-    path: 'portafolio/chat',
-    component: ChatComponent
+    path: 'proyectos',
+    loadChildren: () => import('./projects/projects.module').then(m => m.ProjectsModule)
   },
   {
-    path: 'portafolio/app_notes',
-    component: NotesComponent
-  },
-  {
-    path: 'portafolio/ecommerce',
-    component: EcommerceComponent
-  },
-  {
-    path: 'portafolio/pinturillo',
-    component: PinturilloComponent
-  },
-  {
-    path: "", redirectTo: "inicio", pathMatch: "full",
+    path: '',
+    redirectTo: 'inicio',
+    pathMatch: 'full',
   },
 ];
 
 @NgModule({
   imports: [RouterModule.forChild(routes)],
-  exports: [RouterModule]
+  exports: [RouterModule],
 })
-export class PagesRoutingModule { }
+export class PagesRoutingModule {}

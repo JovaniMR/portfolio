@@ -1,0 +1,31 @@
+<!-- ======= Portfolio Section ======= -->
+<div class="row">
+  <section id="work" class="portfolio-mf sect-pt4 route">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-12">
+          <div class="title-box text-center">
+            <h3 class="title-b">Proyectos personales</h3>
+            <p class="subtitle-a">
+              Estos son algunos de los proyectos que he realizado en forma de
+              práctica.
+              <br />
+              Por cuestiones de privacidad no es posible mostrar los proyectos
+              que he realizado dentro de las empresas.
+            </p>
+            <div class="line-mf"></div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div
+          class="col-lg-3 col-md-6 col-sm-12"
+          *ngFor="let project of projects"
+        >
+          <app-project-card [project]="project"></app-project-card>
+        </div>
+      </div>
+    </div>
+  </section>
+</div>
+<!-- End Portfolio Section -->
