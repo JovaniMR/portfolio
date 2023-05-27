@@ -10,7 +10,7 @@ export class ProjectsComponent {
     {
       urlImage: 'assets/proyects/chat/conversation.png',
       name: 'Chat',
-      creationYear: '2019',
+      creationYear: '2020',
       link: 'chat',
     },
     {
